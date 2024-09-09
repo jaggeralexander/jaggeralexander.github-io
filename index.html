@@ -22,23 +22,23 @@
             width: 80%;
             margin: 0 auto;
             padding: 2rem;
-            padding-bottom: 4rem; /* Ensure space for the footer */
+            padding-bottom: 5rem; /* Added space for the footer */
         }
         .headshot {
             border-radius: 8px; /* Square corners */
             width: 150px;
             height: 150px;
             object-fit: cover;
-            display: block;
-            margin: 0 auto;
             border: 3px solid #4a5d23; /* Olive green border */
+            float: left;
+            margin-right: 1rem; /* Space between image and text */
         }
         h2 {
             color: #4a5d23; /* Olive green */
             border-bottom: 2px solid #4a5d23;
             padding-bottom: 0.5rem;
         }
-        .publications, .presentations {
+        .publications, .presentations, .teaching-experience {
             margin: 2rem 0;
             background-color: #dcdcdc; /* Light neutral background */
             padding: 1rem;
@@ -64,15 +64,15 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Jagger Alexander's Website</h1>
+        <h1>Jagger Alexander's Website</h1>
     </header>
     <div class="container">
         <!-- About Me Section -->
         <section>
             <h2>About Me</h2>
-            <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="overflow: auto;">
                 <img src="Headshot.jpg" alt="Jagger Alexander" class="headshot">
-                <p>Welcome to my personal webpage! Here you can learn more about my experience working in climate and health.</p>
+                <p>Welcome to my personal webpage! Here you can learn more about my experience working in climate and health. I have a background in environmental science and a passion for integrating climate data with health outcomes to drive impactful research and interventions. I am currently completing my PhD in Geosciences at the University of Texas at Austin under the supervision of Dr. Zong-Liang Yang. I received my MS in Climate and Health from the University of Miami in 2021 and my BA in Mathematics from Vanderbilt University in 2020. </p>
                 <!-- Add more content about yourself here -->
             </div>
         </section>
@@ -98,6 +98,15 @@
             </ul>
         </section>
 
+        <!-- Teaching Experience Section -->
+        <section class="teaching-experience">
+            <h2>Teaching Experience</h2>
+            <ul>
+                <li><strong>GEO110T Geoscience Math Tutorial</strong> - Developed and taught a tutorial course focused on applying mathematical concepts to geoscience problems.</li>
+                <li><strong>GEO302 Climate: Past, Present, and Future</strong> - Designed and delivered lectures and lab sessions on the historical and future aspects of climate science.</li>
+            </ul>
+        </section>
+
         <!-- CV Link Section -->
         <section>
             <h2>CV</h2>
@@ -109,4 +118,6 @@
     </footer>
 </body>
 </html>
+
+
 
