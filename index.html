@@ -23,6 +23,29 @@
             margin: 0 auto;
             padding: 2rem;
         }
+        .headshot {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .publications {
+            margin: 2rem 0;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         footer {
             background-color: #333;
             color: #fff;
@@ -39,9 +62,30 @@
         <h1>Welcome to Jagger Alexander's Website</h1>
     </header>
     <div class="container">
-        <h2>About Me</h2>
-        <p>Welcome to my personal webpage! Here you can learn more about my background, experiences, and interests.</p>
-        <!-- Add more content about yourself here -->
+        <!-- Headshot Section -->
+        <img src="headshot.jpg" alt="Jagger Alexander" class="headshot">
+        
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Welcome to my personal webpage! Here you can learn more about my experience working in climate and health.</p>
+            <!-- Add more content about yourself here -->
+        </section>
+
+        <!-- Publications Section -->
+        <section class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265472" target="_blank">Using machine learning to understand microgeographic determinants of the Zika vector, Aedes aegypti</a> - 2022</li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </section>
+
+        <!-- CV Link Section -->
+        <section>
+            <h2>CV</h2>
+            <p>Download my <a href="JaggerAlexanderCV.pdf" target="_blank">CV</a> to learn more about my qualifications and experiences.</p>
+        </section>
     </div>
     <footer>
         <p>&copy; 2024 Jagger Alexander</p>
